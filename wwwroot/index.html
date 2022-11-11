@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <base href="https://localhost:7075">
+    <title>Employee Client Example</title>
+</head>
+<body>
+    <div id="top-bar">
+        <h1>Dev Candidate Test 2</h1>
+        <input type="text" maxlength="32" placeholder="Search by name" id="search-input">
+        <button id="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+    </div>
+    <nav>
+        <a href="#" class="active">Employees</a>
+    </nav>
+
+    <main>
+        <section>
+            <div class="input-section">
+                <h2>Employees</h2>
+                <form>
+                    <div>
+                        <input name="name" pattern="[a-zA-Z]*" maxlength="32" type="text" placeholder="Name">
+                        <input name="rfc" maxlength="13" type="text" placeholder="RFC">
+                        <input type="date">
+                        <select> <!-- TODO: Styles -->
+                            <option value="0">NotSet</option>
+                            <option value="1">Active</option>
+                            <option value="2">Inactive</option>
+                        </select>
+                    </div>
+                    <button type="submit">Add Employee</button>
+                </form>
+            </div>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>RFC</th>
+                            <th>Born Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
