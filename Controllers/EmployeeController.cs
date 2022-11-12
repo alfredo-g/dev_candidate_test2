@@ -79,7 +79,7 @@ public class EmployeeController : ControllerBase
     #region Private Helpers
     private static bool ValidateRFC(string rfc, char initialNameLetter, DateTime bornDate)
     {
-        // NOTE: The only check is using the employee name, 
+        // NOTE: Checks with the name, year, month and day, 
         // the remaining ones just checks the correct format
 
         for(int i = 1; i <= rfc.Length; i++)
