@@ -101,9 +101,9 @@ public class EmployeeController : ControllerBase
                     // This can be improved
                     int bornYear = bornDate.Year;
                     int first = bornYear % 10;
-                    bornYear %= 10;
+                    bornYear /= 10;
                     int second = bornYear % 10;
-                    if(year != (first*10 + second)) return false;
+                    if(year != (second*10 + first)) return false;
                     break;
                 case (int)IndexRFC.Mes:
                     UInt32 month = 0;
